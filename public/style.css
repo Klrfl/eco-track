@@ -1,0 +1,20 @@
+.main-grid {
+  --column-count: 12;
+  --column-size: 7rem;
+
+  display: grid;
+  grid-template-columns:
+    [full-start]
+    1fr
+    [main-start]
+    repeat(var(--column-count), minmax(0, var(--column-size)))
+    [main-end]
+    1fr
+    [full-end];
+}
+
+.main-grid > * {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: full;
+}

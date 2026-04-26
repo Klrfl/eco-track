@@ -7,11 +7,54 @@
     <link rel="stylesheet" href="./style.css" />
     <title>EcoTrack</title>
   </head>
-  <body>
-    <header class="text-center text-4xl">
-      <h1>Hai ini ecotrack</h1>
-      <p>keren kan</p>
-      <div class="i-material-symbols:motion-play-outline"></div>
-    </header>
+
+  <body class="main-grid">
+    <nav class="grid grid-cols-subgrid px-8 py-4">
+      <div class="col-[main] flex justify-between">
+        <span>EcoTrack</span>
+
+        <ul class="flex justify-center items-center gap-4">
+          <li>Features</li>
+          <li>Impact</li>
+          <li>Solutions</li>
+          <li>About</li>
+        </ul>
+
+        <div>
+          <a class="btn">login</a>
+          <a class="btn">get started</a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="min-h-[60vh] items-center">
+      <figure class="col-[main] lg:col-start-8 lg:col-span-6 shadow-md rounded">
+        <img
+          src="https://picsum.photos/600/400"
+          width="600"
+          height="400"
+          alt=""
+          class="w-full object-cover"
+        />
+      </figure>
+
+      <figcaption
+        class="col-[main] lg:col-start-[main] lg:col-span-5 lg:order-first grid gap-4"
+      >
+        <h1 class="text-4xl">
+          Welcome to Eco-Track: Stewardship Through Data.
+        </h1>
+        <p>
+          Measure your daily carbon footprint and take actionable steps toward
+          environmental stewardship with professional metrics and real-time
+          insights.
+        </p>
+
+        <div class="btns flex gap-4 flex-wrap">
+          <a href="/calculate" class="btn">start calculating</a>
+          <a href="/calculate" class="btn">learn more</a>
+        </div>
+      </figcaption>
+    </section>
   </body>
 </html>
