@@ -1,0 +1,26 @@
+{
+  "name": "eco-track",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "unocss --watch public/index.html -o public/uno.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Efraim Munthe",
+  "license": "MIT",
+  "packageManager": "pnpm@10.33.0",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@iconify-json/material-symbols": "^1.2.69",
+    "@unocss/cli": "^66.6.8",
+    "@unocss/preset-icons": "^66.6.8",
+    "@unocss/preset-web-fonts": "^66.6.8",
+    "@unocss/preset-wind4": "^66.6.8",
+    "unocss": "^66.6.8"
+  }
+}
