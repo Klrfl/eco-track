@@ -1,8 +1,10 @@
 .main-grid {
   --column-count: 12;
-  --column-size: 7rem;
+  --column-size: 6rem;
+  --grid-gap: 1rem;
 
   display: grid;
+  gap: var(--grid-gap);
   grid-template-columns:
     [full-start]
     1fr
