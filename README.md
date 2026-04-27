@@ -22,7 +22,7 @@ Tuliskan perspektifmu: isu iklim spesifik apa yang ingin kamu angkat melalui des
 1. Clone/extract project
 2. install `pnpm`
 3. Jalankan `pnpm i` (jika ada backend)
-4. Jalankan dengan `node app.js` atau buka index.html
+4. Jalankan dengan `pnpm start` atau buka public/index.html
 
 ## Tantangan yang Dihadapi
 
