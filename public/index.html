@@ -9,11 +9,13 @@
   </head>
 
   <body class="main-grid gap-x-6">
-    <nav class="grid grid-cols-subgrid p-6">
+    <nav
+      class="grid grid-cols-subgrid p-6 sticky top-0 bg-white/75 backdrop-blur-lg border-b-2 border-b-white/50 z-10"
+    >
       <div class="col-[main] flex items-center justify-between">
         <span class="font-bold text-lg">Eco-Track</span>
 
-        <ul class="flex justify-center items-center gap-4">
+        <ul class="flex justify-center items-center gap-8">
           <li>Features</li>
           <li>Impact</li>
           <li>Solutions</li>
@@ -22,7 +24,7 @@
 
         <div class="capitalize font-bold flex items-center gap-4">
           <a class="text-green-700"> login </a>
-          <a class="py-3 px-8 rounded-xl bg-green-700 text-white">
+          <a class="py-2 px-6 rounded-xl bg-green-700 text-white">
             get started
           </a>
         </div>
@@ -45,16 +47,16 @@
       <figcaption
         class="col-[main] lg:col-start-[main] lg:col-span-5 lg:order-first grid gap-4 rounded-2xl"
       >
-        <h1 class="text-4xl">
+        <h1 class="text-4xl font-bold">
           Welcome to Eco-Track: Stewardship Through Data.
         </h1>
-        <span
-          class="bg-green-200 uppercase text-sm text-green-900 font-bold rounded-full justify-self-start order-first py-1 px-3"
+        <div
+          class="bg-green-200 uppercase text-sm text-green-900 font-bold rounded-full justify-self-start order-first py-1 px-3 flex items-center gap-2"
         >
-          <div class="i-material-symbols:nest-eco-neaf-outline"></div>
+          <div class="i-material-symbols:nest-eco inline-block text-lg"></div>
 
           Pioneering sustainability
-        </span>
+        </div>
         <p>
           Measure your daily carbon footprint and take actionable steps toward
           environmental stewardship with professional metrics and real-time
@@ -245,7 +247,7 @@
 
         <div class="grid grid-cols-[1fr_2rem] gap-4">
           <p class="uppercase text-sm">your monthly progress</p>
-          <p>72%</p>
+          <p class="font-bold">72%</p>
 
           <div class="indicator bg-green-100/10 h-4 col-span-2">
             <span class="progress-bar block bg-green-100 h-full w-[72%]"></span>
