@@ -23,15 +23,16 @@
   background: linear-gradient(to bottom, #ffffffaa, #ffffffee);
 }
 
-#final-cta {
+.card-with-blircle {
   position: relative;
   isolation: isolate;
 }
 
 /* beautiful background circles :3  */
-#final-cta::before,
-#final-cta::after {
+.card-with-blircle::before,
+.card-with-blircle::after {
   content: "";
+  display: block;
   position: absolute;
   z-index: -1;
 
@@ -42,12 +43,17 @@
   border-radius: 100%;
 }
 
-#final-cta::before {
+#impact-card::before {
+  right: 0;
+  bottom: 0;
+}
+
+#final-cta-card::before {
   left: -4rem;
   top: -2rem;
 }
 
-#final-cta::after {
+#final-cta-card::after {
   right: -2rem;
   bottom: -1rem;
 }

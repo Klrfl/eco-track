@@ -88,42 +88,38 @@
 /* layer: theme */
 :root, :host {
 --spacing: 0.25rem;
---radius-DEFAULT: 0.25rem;
+--fontWeight-bold: 700;
+--radius-xl: 0.75rem;
+--radius-4xl: 2rem;
+--radius-2xl: 1rem;
+--colors-gray-300: oklch(87.2% 0.01 258.338);
 --colors-red-500: oklch(63.7% 0.237 25.331);
 --colors-green-700: oklch(52.7% 0.154 150.069);
---fontWeight-bold: 700;
 --colors-green-100: oklch(96.2% 0.044 156.743);
---radius-4xl: 2rem;
 --container-prose: 65ch;
---radius-2xl: 1rem;
---colors-red-700: oklch(50.5% 0.213 27.518);
 --colors-white: #fff;
+--colors-green-200: oklch(92.5% 0.084 155.995);
+--colors-green-900: oklch(39.3% 0.095 152.535);
+--colors-red-700: oklch(50.5% 0.213 27.518);
 --colors-gray-100: oklch(96.7% 0.003 264.542);
 --colors-gray-200: oklch(92.8% 0.006 264.531);
---colors-green-900: oklch(39.3% 0.095 152.535);
 --colors-red-900: oklch(39.6% 0.141 25.723);
---colors-gray-300: oklch(87.2% 0.01 258.338);
 --colors-black: #000;
+--colors-gray-500: oklch(55.1% 0.027 264.364);
+--text-lg-fontSize: 1.125rem;
+--text-lg-lineHeight: 1.75rem;
 --text-4xl-fontSize: 2.25rem;
 --text-4xl-lineHeight: 2.5rem;
+--text-sm-fontSize: 0.875rem;
+--text-sm-lineHeight: 1.25rem;
 --text-xl-fontSize: 1.25rem;
 --text-xl-lineHeight: 1.75rem;
 --text-2xl-fontSize: 1.5rem;
 --text-2xl-lineHeight: 2rem;
---text-sm-fontSize: 0.875rem;
---text-sm-lineHeight: 1.25rem;
 --font-sans: "Manrope",ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 --font-mono: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 --default-font-family: var(--font-sans);
 --default-monoFont-family: var(--font-mono);
---radius-lg: 0.5rem;
---radius-xl: 0.75rem;
---text-lg-fontSize: 1.125rem;
---text-lg-lineHeight: 1.75rem;
---colors-gray-700: oklch(37.3% 0.034 259.733);
---colors-green-300: oklch(87.1% 0.15 154.449);
---colors-gray-900: oklch(21% 0.034 264.665);
---colors-gray-500: oklch(55.1% 0.027 264.364);
 }
 /* layer: base */
 /*
@@ -565,7 +561,6 @@ input:where([type='button'], [type='reset'], [type='submit']),
 .border-2{border-width:2px;}
 .border-transparent{border-color:transparent;}
 .border-l-red-500{border-left-color:color-mix(in srgb, var(--colors-red-500) var(--un-border-left-opacity), transparent) /* oklch(63.7% 0.237 25.331) */;--un-border-left-opacity:var(--un-border-opacity);}
-.rounded{border-radius:var(--radius-DEFAULT);}
 .rounded-2xl{border-radius:var(--radius-2xl);}
 .rounded-4xl{border-radius:var(--radius-4xl);}
 .rounded-full{border-radius:calc(infinity * 1px);}
@@ -575,6 +570,7 @@ input:where([type='button'], [type='reset'], [type='submit']),
 .bg-gray-300\/20{background-color:color-mix(in srgb, var(--colors-gray-300) 20%, transparent) /* oklch(87.2% 0.01 258.338) */;}
 .bg-green-100{background-color:color-mix(in srgb, var(--colors-green-100) var(--un-bg-opacity), transparent) /* oklch(96.2% 0.044 156.743) */;}
 .bg-green-100\/10{background-color:color-mix(in srgb, var(--colors-green-100) 10%, transparent) /* oklch(96.2% 0.044 156.743) */;}
+.bg-green-200{background-color:color-mix(in srgb, var(--colors-green-200) var(--un-bg-opacity), transparent) /* oklch(92.5% 0.084 155.995) */;}
 .bg-green-700{background-color:color-mix(in srgb, var(--colors-green-700) var(--un-bg-opacity), transparent) /* oklch(52.7% 0.154 150.069) */;}
 .bg-green-700\/20{background-color:color-mix(in srgb, var(--colors-green-700) 20%, transparent) /* oklch(52.7% 0.154 150.069) */;}
 .bg-green-900{background-color:color-mix(in srgb, var(--colors-green-900) var(--un-bg-opacity), transparent) /* oklch(39.3% 0.095 152.535) */;}
@@ -603,14 +599,12 @@ input:where([type='button'], [type='reset'], [type='submit']),
 .h-full{height:100%;}
 .max-w-\[50ch\]{max-width:50ch;}
 .max-w-prose{max-width:var(--container-prose);}
-.min-h-\[60vh\]{min-height:60vh;}
 .w-\[72\%\]{width:72%;}
-.w-full{width:100%;}
 .block{display:block;}
 .inline-block{display:inline-block;}
 .uppercase{text-transform:uppercase;}
 .capitalize{text-transform:capitalize;}
-.shadow-md{--un-shadow:0 4px 6px -1px var(--un-shadow-color, rgb(0 0 0 / 0.1)),0 2px 4px -2px var(--un-shadow-color, rgb(0 0 0 / 0.1));box-shadow:var(--un-inset-shadow), var(--un-inset-ring-shadow), var(--un-ring-offset-shadow), var(--un-ring-shadow), var(--un-shadow);}
+.shadow-lg{--un-shadow:0 10px 15px -3px var(--un-shadow-color, rgb(0 0 0 / 0.1)),0 4px 6px -4px var(--un-shadow-color, rgb(0 0 0 / 0.1));box-shadow:var(--un-inset-shadow), var(--un-inset-ring-shadow), var(--un-ring-offset-shadow), var(--un-ring-shadow), var(--un-shadow);}
 .content-center{align-content:center;}
 .content-end{align-content:flex-end;}
 .items-start{align-items:flex-start;}
@@ -618,6 +612,8 @@ input:where([type='button'], [type='reset'], [type='submit']),
 .inset-0{inset:calc(var(--spacing) * 0);}
 .justify-center{justify-content:center;}
 .justify-between{justify-content:space-between;}
+.justify-self-start{justify-self:start;}
+.order-first{order:calc(-infinity);}
 .place-items-center{place-items:center;}
 .absolute{position:absolute;}
 .relative{position:relative;}
@@ -641,6 +637,7 @@ input:where([type='button'], [type='reset'], [type='submit']),
 .bg-gray-300\/20{background-color:color-mix(in oklab, var(--colors-gray-300) 20%, transparent) /* oklch(87.2% 0.01 258.338) */;}
 .bg-green-100{background-color:color-mix(in oklab, var(--colors-green-100) var(--un-bg-opacity), transparent) /* oklch(96.2% 0.044 156.743) */;}
 .bg-green-100\/10{background-color:color-mix(in oklab, var(--colors-green-100) 10%, transparent) /* oklch(96.2% 0.044 156.743) */;}
+.bg-green-200{background-color:color-mix(in oklab, var(--colors-green-200) var(--un-bg-opacity), transparent) /* oklch(92.5% 0.084 155.995) */;}
 .bg-green-700{background-color:color-mix(in oklab, var(--colors-green-700) var(--un-bg-opacity), transparent) /* oklch(52.7% 0.154 150.069) */;}
 .bg-green-700\/20{background-color:color-mix(in oklab, var(--colors-green-700) 20%, transparent) /* oklch(52.7% 0.154 150.069) */;}
 .bg-green-900{background-color:color-mix(in oklab, var(--colors-green-900) var(--un-bg-opacity), transparent) /* oklch(39.3% 0.095 152.535) */;}
@@ -664,5 +661,6 @@ input:where([type='button'], [type='reset'], [type='submit']),
 .lg\:col-start-10{grid-column-start:10;}
 .lg\:col-start-8{grid-column-start:8;}
 .lg\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr));}
+.lg\:items-center{align-items:center;}
 .lg\:order-first{order:calc(-infinity);}
 }
