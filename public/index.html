@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./uno.css" />
     <link rel="stylesheet" href="./style.css" />
-    <title>EcoTrack</title>
+    <title>Eco-Track</title>
   </head>
 
-  <body class="main-grid">
-    <nav class="grid grid-cols-subgrid px-8 py-4">
-      <div class="col-[main] flex justify-between">
-        <span>EcoTrack</span>
+  <body class="main-grid gap-x-6">
+    <nav class="grid grid-cols-subgrid p-6">
+      <div class="col-[main] flex items-center justify-between">
+        <span class="font-bold text-lg">Eco-Track</span>
 
         <ul class="flex justify-center items-center gap-4">
           <li>Features</li>
@@ -20,14 +20,16 @@
           <li>About</li>
         </ul>
 
-        <div>
-          <a class="btn">login</a>
-          <a class="btn">get started</a>
+        <div class="capitalize font-bold flex items-center gap-4">
+          <a class="text-green-700"> login </a>
+          <a class="py-3 px-8 rounded-xl bg-green-700 text-white">
+            get started
+          </a>
         </div>
       </div>
     </nav>
 
-    <section class="min-h-[60vh] items-center">
+    <section class="items-center py-24 gap-y-8">
       <figure class="col-[main] lg:col-start-8 lg:col-span-6 shadow-md rounded">
         <img
           src="https://picsum.photos/600/400"
@@ -39,7 +41,7 @@
       </figure>
 
       <figcaption
-        class="col-[main] lg:col-start-[main] lg:col-span-5 lg:order-first grid gap-4"
+        class="col-[main] lg:col-start-[main] lg:col-span-5 lg:order-first grid gap-4 rounded-2xl"
       >
         <h1 class="text-4xl">
           Welcome to Eco-Track: Stewardship Through Data.
@@ -51,17 +53,26 @@
         </p>
 
         <div class="btns flex gap-4 flex-wrap">
-          <a href="/calculate" class="btn">start calculating</a>
-          <a href="/calculate" class="btn">learn more</a>
+          <a
+            href="/calculate"
+            class="btn py-3 px-8 rounded-xl bg-green-700 text-white font-bold"
+          >
+            start calculating
+          </a>
+          <a
+            href="/calculate"
+            class="btn py-3 px-8 rounded-xl outline outline-green-700 font-bold"
+            >learn more</a
+          >
         </div>
       </figcaption>
     </section>
 
-    <section class="py-24">
+    <section class="bg-gray-300/20 py-24 gap-y-8">
       <article
-        class="col-[main] md:col-start-[main] md:col-span-6 grid content-center gap-6"
+        class="col-[main] lg:col-start-[main] lg:col-span-6 grid content-center gap-6"
       >
-        <h2 class="text-4xl">Why Track?</h2>
+        <h2 class="text-4xl font-bold">Why Track?</h2>
         <blockquote
           class="border-2 border-transparent border-l-red-500 bg-red-500/10 p-4 grid grid-cols-[2rem_1fr]"
         >
@@ -83,25 +94,33 @@
         </p>
       </article>
 
-      <ul class="col-[main] md:col-span-6 grid gap-6 grid-cols-subgrid">
-        <li class="col-span-3 p-8 pt-24 bg-green-700/20">
+      <ul class="col-[main] lg:col-span-6 grid gap-6 grid-cols-subgrid">
+        <li
+          class="col-span-6 md:col-span-3 p-8 pt-24 bg-green-700/20 rounded-2xl"
+        >
           <div class="i-material-symbols:bar-chart-4-bars"></div>
           <h3 class="text-2xl">Data Precision</h3>
           <p>Accurate predictions based on global climate models.</p>
         </li>
 
-        <li class="col-span-3 p-8 pt-24 bg-green-700 text-white">
+        <li
+          class="col-span-6 md:col-span-3 p-8 pt-24 bg-green-700 text-white rounded-2xl"
+        >
           <div class="i-material-symbols:bar-chart-4-bars"></div>
           <h3 class="text-2xl">Global Impact</h3>
           <p>Join a network of 500k+ Stewards making daily differences.</p>
         </li>
 
-        <li class="col-span-3 p-8 pt-24 bg-green-700 text-white">
+        <li
+          class="col-span-6 md:col-span-3 p-8 pt-24 bg-green-700 text-white rounded-2xl"
+        >
           <h3 class="text-2xl">95%</h3>
           <p>User accuracy in tracking monthly emissions.</p>
         </li>
 
-        <li class="col-span-3 p-8 pt-24 bg-green-700/20">
+        <li
+          class="col-span-6 md:col-span-3 p-8 pt-24 bg-green-700/20 rounded-2xl"
+        >
           <div class="i-material-symbols:check-circle"></div>
           <h3 class="text-2xl">Certified</h3>
           <p>Aligned with international environmental standards.</p>
@@ -109,23 +128,22 @@
       </ul>
     </section>
 
-    <section class="py-24 gap-y-24">
+    <section class="gap-y-16 py-24">
       <header class="col-[main] text-center">
-        <h2 class="text-4xl">How it works</h2>
+        <h2 class="text-4xl font-bold mb-6">How it works</h2>
         <p>
           Our three-step process simplifies complex environmental data into
           actionable life changes.
         </p>
       </header>
 
-      <ul class="col-[main] grid gap-8 lg:grid-cols-3">
+      <ul
+        class="col-[main] grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+      >
         <li
-          class="p-8 bg-white outline-2 flex flex-col items-start gap-4 outline-gray-100"
+          class="p-8 bg-white outline-2 flex flex-col items-start gap-4 outline-gray-100 rounded-2xl"
         >
-          <span
-            class="inline-block bg-green-700/20 p-4 text-xl"
-            style="border-radius: 1rem"
-          >
+          <span class="inline-block bg-green-700/20 p-4 text-xl rounded-2xl">
             <div class="i-material-symbols:local-taxi"></div>
           </span>
 
@@ -136,22 +154,23 @@
           </p>
 
           <div>
-            <span class="inline-block text-sm uppercase bg-gray-200 px-3 py-1">
+            <span
+              class="inline-block text-sm uppercase bg-gray-200 px-3 py-1 rounded-full"
+            >
               EV Ready
             </span>
-            <span class="inline-block text-sm uppercase bg-gray-200 px-3 py-1">
+            <span
+              class="inline-block text-sm uppercase bg-gray-200 px-3 py-1 rounded-full"
+            >
               Flight tracker
             </span>
           </div>
         </li>
 
         <li
-          class="p-8 bg-white outline-2 flex flex-col items-start gap-4 outline-gray-100"
+          class="p-8 bg-white outline-2 flex flex-col items-start gap-4 outline-gray-100 rounded-2xl"
         >
-          <span
-            class="inline-block bg-green-700/20 p-4 text-xl"
-            style="border-radius: 1rem"
-          >
+          <span class="inline-block bg-green-700/20 p-4 text-xl rounded-2xl">
             <div class="i-material-symbols:bolt"></div>
           </span>
           <h3 class="text-2xl font-bold">Energy</h3>
@@ -161,22 +180,23 @@
           </p>
 
           <div>
-            <span class="inline-block text-sm uppercase bg-gray-200 px-3 py-1">
+            <span
+              class="inline-block text-sm uppercase bg-gray-200 px-3 py-1 rounded-full"
+            >
               Smart Connect
             </span>
-            <span class="inline-block text-sm uppercase bg-gray-200 px-3 py-1">
+            <span
+              class="inline-block text-sm uppercase bg-gray-200 px-3 py-1 rounded-full"
+            >
               Renewables
             </span>
           </div>
         </li>
 
         <li
-          class="p-8 bg-white outline-2 flex flex-col items-start gap-4 outline-gray-100"
+          class="p-8 bg-white outline-2 flex flex-col items-start gap-4 outline-gray-100 rounded-2xl"
         >
-          <span
-            class="inline-block bg-green-700/20 p-4 text-xl"
-            style="border-radius: 1rem"
-          >
+          <span class="inline-block bg-green-700/20 p-4 text-xl rounded-2xl">
             <div class="i-material-symbols:insert-chart-outline"></div>
           </span>
           <h3 class="text-2xl font-bold">Results</h3>
@@ -186,10 +206,14 @@
           </p>
 
           <div>
-            <span class="inline-block text-sm uppercase bg-gray-200 px-3 py-1">
+            <span
+              class="inline-block text-sm uppercase bg-gray-200 px-3 py-1 rounded-full"
+            >
               Daily Report
             </span>
-            <span class="inline-block text-sm uppercase bg-gray-200 px-3 py-1">
+            <span
+              class="inline-block text-sm uppercase bg-gray-200 px-3 py-1 rounded-full"
+            >
               Forecasting
             </span>
           </div>
@@ -197,12 +221,12 @@
       </ul>
     </section>
 
-    <section class="gap-8 items-start">
+    <section class="gap-8 items-start py-24">
       <div
-        class="col-[main] lg:col-start-[main] lg:col-span-8 bg-green-900 text-white p-12 flex flex-col gap-8"
+        class="col-[main] lg:col-start-[main] lg:col-span-8 bg-green-900 text-white p-12 flex flex-col gap-8 rounded-2xl"
       >
         <article class="max-w-[50ch]">
-          <h2 class="text-2xl mb-4">Real-time impact feedback</h2>
+          <h2 class="text-2xl font-bold mb-4">Real-time impact feedback</h2>
           <p>
             Our algorithm doesn't just show numbers; it shows progress. Watch
             your dashboard turn green as you reach sustainability milestones.
@@ -220,9 +244,9 @@
       </div>
 
       <div
-        class="col-[main] lg:col-start-10 lg:col-span-4 bg-red-500/10 text-red-900 p-8"
+        class="col-[main] bg-gray-300/20 lg:col-start-10 lg:col-span-4 bg-red-500/10 text-red-900 p-8 rounded-2xl"
       >
-        <div class="i-material-symbols:lightbulb text-2xl"></div>
+        <div class="i-material-symbols:lightbulb text-4xl"></div>
         <h3 class="text-2xl font-bold">Smart tip</h3>
 
         <p>
@@ -232,11 +256,13 @@
       </div>
 
       <ul class="col-[main] grid gap-8 grid-cols-subgrid">
-        <li class="col-[main] lg:col-[main] lg:col-span-4 relative">
+        <li
+          class="col-[main] lg:col-[main] lg:col-span-4 relative rounded-2xl overflow-hidden"
+        >
           <img
             src="./insights.png"
             alt=""
-            class="absolute inset-0 size-full z-[-1]"
+            class="absolute inset-0 size-full z-[-1] object-cover"
           />
 
           <figcaption
@@ -249,7 +275,7 @@
         </li>
 
         <li
-          class="col-span-6 lg:col-span-2 bg-gray-300 flex flex justify-center items-center px-8 py-24 text-center"
+          class="col-span-6 lg:col-span-2 bg-gray-300 flex flex justify-center items-center px-8 py-24 text-center rounded-2xl"
         >
           <p class="text-sm">
             <span class="block text-2xl font-bold">12.4</span> Tons offset
@@ -257,7 +283,7 @@
         </li>
 
         <li
-          class="col-span-6 lg:col-span-2 bg-green-700 text-white flex flex justify-center items-center px-8 py-24 text-center"
+          class="col-span-6 lg:col-span-2 bg-green-700 text-white flex flex justify-center items-center px-8 py-24 text-center rounded-2xl"
         >
           <p class="text-sm">
             <span class="block text-2xl font-bold">12.4</span> Tons offset
@@ -265,7 +291,7 @@
         </li>
 
         <li
-          class="col-span-6 lg:col-span-2 bg-gray-300 flex flex justify-center items-center px-8 py-24 text-center"
+          class="col-span-6 lg:col-span-2 bg-gray-300 flex flex justify-center items-center px-8 py-24 text-center rounded-2xl"
         >
           <p class="text-sm">
             <span class="block text-2xl font-bold">12.4</span> Tons offset
@@ -273,7 +299,7 @@
         </li>
 
         <li
-          class="col-span-6 lg:col-span-2 bg-green-700 text-white flex flex justify-center items-center px-8 py-24 text-center"
+          class="col-span-6 lg:col-span-2 bg-green-700 text-white flex flex justify-center items-center px-8 py-24 text-center rounded-2xl"
         >
           <p class="text-sm">
             <span class="block text-2xl font-bold">12.4</span> Tons offset
@@ -282,19 +308,22 @@
       </ul>
     </section>
 
-    <section class="py-24 place-items-center !grid-cols-1">
+    <section class="min-h-[60vh] place-items-center bg-gray-300/20">
       <div
-        class="bg-green-900 text-white text-center py-8 px-16 flex flex-col items-center gap-8"
+        class="col-[main] bg-green-900 rounded-4xl text-white text-center py-16 px-12 lg:px-6 flex flex-col items-center gap-6"
       >
-        <h2 class="text-4xl">Ready to lead the change?</h2>
+        <h2 class="text-4xl font-bold">Ready to lead the change?</h2>
         <p class="max-w-prose">
           Join thousands of individuals taking data-driven steps towards a
           healthier planet today.
         </p>
 
-        <a href="/calculator" class="capitalize text-black p-4 bg-white"
-          >Start calculating now</a
+        <a
+          href="/calculator"
+          class="capitalize text-black p-4 bg-white rounded-2xl"
         >
+          Start calculating now
+        </a>
       </div>
     </section>
   </body>
