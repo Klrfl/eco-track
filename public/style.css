@@ -22,3 +22,32 @@
 #insights {
   background: linear-gradient(to bottom, #ffffffaa, #ffffffee);
 }
+
+#final-cta {
+  position: relative;
+  isolation: isolate;
+}
+
+/* beautiful background circles :3  */
+#final-cta::before,
+#final-cta::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+
+  width: 12rem;
+  height: 12rem;
+  background: radial-gradient(#ffffff88, #ffffff00);
+  filter: blur(8rem);
+  border-radius: 100%;
+}
+
+#final-cta::before {
+  left: -4rem;
+  top: -2rem;
+}
+
+#final-cta::after {
+  right: -2rem;
+  bottom: -1rem;
+}
