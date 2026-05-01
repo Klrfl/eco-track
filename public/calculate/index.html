@@ -154,12 +154,20 @@
           </p>
         </header>
 
-        <p class="text-sm uppercase place-self-center">Awaiting data...</p>
+        <p id="output-field" class="text-sm uppercase place-self-center">
+          Awaiting data...
+        </p>
 
         <div class="grid grid-cols-4">
-          <div id="bar" class="bg-green-700/20 h-8 col-span-full"></div>
-          <span>0 KG CO2e</span>
-          <span class="col-end-[-1]">Daily limit: 15 KG</span>
+          <div id="bar" class="bg-green-700/20 h-8 col-span-full relative">
+            <span
+              id="bar-inner"
+              class="block bg-green-700 h-full transform-origin-left transition-all"
+            ></span>
+          </div>
+
+          <span id="output-total">0 KG CO2e</span>
+          <span id="output-limit" class="col-end-[-1]">Daily limit: 15 KG</span>
         </div>
       </output>
     </form>
