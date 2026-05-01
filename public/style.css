@@ -1,6 +1,11 @@
 @layer base;
 
 @layer base {
+  a,
+  button {
+    cursor: pointer;
+  }
+
   .main-grid {
     --column-count: 12;
     --column-size: 5.5rem;
