@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../uno.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Eco-Track | Calculate</title>
+  </head>
+
+  <body class="main-grid gap-x-6 bg-gray-100">
+    <header class="py-24">
+      <h1 class="col-[main] text-4xl font-bold mb-4">Carbon Calculator</h1>
+      <p class="col-[main] max-w-prose">
+        Measure your daily footprint and take actionable steps toward
+        environmental stewardship. Every small change contributes to a healthier
+        planet.
+      </p>
+    </header>
+
+    <form class="grid-flow-dense gap-y-8">
+      <section
+        class="col-[main] lg:col-start-[main] lg:col-span-7 p-8 rounded-xl grid grid-cols-2 gap-x-4 gap-y-6 outline-2 outline-lime-900/20 bg-white"
+      >
+        <header class="col-span-2 flex gap-2 text-green-900">
+          <div class="bg-green-700/20 p-2 rounded-lg">
+            <div class="i-material-symbols:local-taxi"></div>
+          </div>
+          <h2 class="text-xl font-medium">Transportation</h2>
+        </header>
+
+        <label
+          for="distance"
+          class="text-sm text-gray-700 uppercase col-span-full"
+        >
+          Distance traveled (KM)
+
+          <input
+            type="text"
+            placeholder="Enter distance..."
+            class="text-gray-700 bg-gray-100 outline-2 outline-lime-900/20 w-full rounded-xl"
+          />
+        </label>
+
+        <label
+          for="vehicle-type"
+          class="text-sm text-gray-700 uppercase col-span-2"
+        >
+          Vehicle type
+        </label>
+
+        <label
+          class="block cursor-pointer outline-2 outline-lime-900/20 flex gap-4 items-center justify-center px-8 py-4 rounded-xl has-[input]:border-red-500"
+          for="car"
+        >
+          <input type="radio" name="vehicle-type" value="car" id="car" />
+          <div class="i-material-symbols:local-taxi"></div>
+          Car
+        </label>
+
+        <label
+          class="block outline-2 cursor-pointer outline-lime-900/20 flex gap-4 items-center justify-center px-8 py-4 rounded-xl"
+          for="motorcycle"
+        >
+          <input
+            type="radio"
+            name="vehicle-type"
+            value="motorcycle"
+            id="motorcycle"
+          />
+          <div class="i-material-symbols:motorcycle"></div>
+          Motorcycle
+        </label>
+      </section>
+
+      <section
+        id="energy-usage"
+        class="col-[main] lg:col-start-[main] lg:col-span-7 p-8 rounded-xl grid grid-cols-6 gap-x-4 gap-y-6 outline-2 outline-lime-900/20 bg-white"
+      >
+        <header class="col-span-full flex gap-2 text-green-900">
+          <div class="bg-red-700/20 p-2 rounded-lg">
+            <div class="i-material-symbols:bolt-outline"></div>
+          </div>
+          <h2 class="text-xl font-medium">Energy usage</h2>
+        </header>
+
+        <label class="uppercase text-sm col-span-2" for="ac"
+          >AC hours /day
+        </label>
+        <input
+          type="text"
+          id="ac"
+          name="ac"
+          inputmode="numeric"
+          class="col-span-4 text-gray-700 bg-gray-100 outline-2 outline-lime-900/20 rounded-xl"
+          required
+        />
+
+        <label class="uppercase text-sm col-span-2" for="Laptop"
+          >Laptop Hours /day
+        </label>
+        <input
+          type="text"
+          id="laptop"
+          name="laptop"
+          inputmode="numeric"
+          class="col-span-4 text-gray-700 bg-gray-100 outline-2 outline-lime-900/20 w-full rounded-xl"
+          required
+        />
+      </section>
+
+      <output
+        id="impact"
+        class="col-[main] lg:col-span-5 row-span-2 bg-green-900 text-white relative isolate p-12 rounded-xl overflow-hidden grid grid-rows-[0.5fr_2fr_1fr]"
+      >
+        <img
+          src="../abstract-bg.png"
+          class="z-[-1] absolute inset-0 size-full object-cover"
+          alt=""
+        />
+        <header>
+          <h2 class="text-2xl">Your impact</h2>
+          <p>
+            Calculate your usage to see your environmental footprint results
+            here.
+          </p>
+        </header>
+
+        <p class="text-sm uppercase place-self-center">Awaiting data...</p>
+
+        <div class="grid grid-cols-4">
+          <div id="bar" class="bg-green-700/20 h-8 col-span-full"></div>
+          <span>0 KG CO2e</span>
+          <span class="col-end-[-1]">Daily limit: 15 KG</span>
+        </div>
+      </output>
+    </form>
+  </body>
+</html>
