@@ -13,9 +13,9 @@ Tuliskan perspektifmu: isu iklim spesifik apa yang ingin kamu angkat melalui des
 - [ ] A1. Real-time UI Feedback
 - [ ] A2. Interactive Tips (Action Plan)
 - [ ] A3. Dynamic Result Display
-- [ ] B1. Static File Serving
+- [x] B1. Static File Serving
 - [ ] B2. The Carbon API
-- [ ] B3. Smart Validation (Centang \[x\] yang berhasil diselesaikan)
+- [ ] B3. Smart Validation
 
 ## Cara Menjalankan Project
 
