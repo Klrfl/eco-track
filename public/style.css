@@ -1,59 +1,68 @@
-.main-grid {
-  --column-count: 12;
-  --column-size: 5.5rem;
+@layer base;
 
-  display: grid;
-  grid-template-columns:
-    [full-start]
-    1fr
-    [main-start]
-    repeat(var(--column-count), minmax(0, var(--column-size)))
-    [main-end]
-    1fr
-    [full-end];
+@layer base {
+  .main-grid {
+    --column-count: 12;
+    --column-size: 5.5rem;
+
+    display: grid;
+    grid-template-columns:
+      [full-start]
+      1fr
+      [main-start]
+      repeat(var(--column-count), minmax(0, var(--column-size)))
+      [main-end]
+      1fr
+      [full-end];
+  }
+
+  .main-grid > * {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column: full;
+  }
+
+  #insights {
+    background: linear-gradient(to bottom, #ffffffaa, #ffffffee);
+  }
+
+  .card-with-blircle {
+    position: relative;
+    isolation: isolate;
+  }
+
+  /* beautiful background circles :3  */
+  .card-with-blircle::before,
+  .card-with-blircle::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+
+    width: 12rem;
+    height: 12rem;
+    background: radial-gradient(#ffffff88, #ffffff00);
+    filter: blur(8rem);
+    border-radius: 100%;
+  }
+
+  #impact-card::before {
+    right: 0;
+    bottom: 0;
+  }
+
+  #final-cta-card::before {
+    left: -4rem;
+    top: -2rem;
+  }
+
+  #final-cta-card::after {
+    right: -2rem;
+    bottom: -1rem;
+  }
 }
 
-.main-grid > * {
-  display: grid;
-  grid-template-columns: subgrid;
-  grid-column: full;
-}
-
-#insights {
-  background: linear-gradient(to bottom, #ffffffaa, #ffffffee);
-}
-
-.card-with-blircle {
-  position: relative;
-  isolation: isolate;
-}
-
-/* beautiful background circles :3  */
-.card-with-blircle::before,
-.card-with-blircle::after {
-  content: "";
+input {
   display: block;
-  position: absolute;
-  z-index: -1;
-
-  width: 12rem;
-  height: 12rem;
-  background: radial-gradient(#ffffff88, #ffffff00);
-  filter: blur(8rem);
-  border-radius: 100%;
-}
-
-#impact-card::before {
-  right: 0;
-  bottom: 0;
-}
-
-#final-cta-card::before {
-  left: -4rem;
-  top: -2rem;
-}
-
-#final-cta-card::after {
-  right: -2rem;
-  bottom: -1rem;
+  padding: 1rem 1.5rem;
 }
