@@ -2,7 +2,9 @@
 
 ## Tentang Project
 
-Deskripsi singkat apa yang dibangun dan tujuannya.
+Eco-track adalah website yang bertujuan untuk menerjemahkan pengunaan energi menjadi angka supaya kita bisa memantau, mengurangi emisi dan mengambil langkah untuk menjadi lebih bersahabat dengan lingkungan.
+
+> Aplikasi ini dibuat untuk memenuhi tugas mini project ITC web.
 
 ## Masalah Iklim yang Ingin Disoroti
 
@@ -26,4 +28,4 @@ Tuliskan perspektifmu: isu iklim spesifik apa yang ingin kamu angkat melalui des
 
 ## Tantangan yang Dihadapi
 
-Ceritakan kesulitan teknis yang kamu temui dan bagaimana kamu mengatasinya. (opsional tapi dihargai)
+Saya kesulitan dalam merancang API. Saya rasa akan lebih mudah jika diperbolehkan menggunakan templating sehingga frontend hanya berbentuk `<form>` tanpa menggunakan JavaScript untuk berkomunikasi dengan backend. Menurut saya juga lebih bagus karena request nanti diencode di URL sehingga dapat link dapat dibagikan ke orang lain dan hasil kalkulasinya langsung muncul tanpa harus diketik ulang di form.
