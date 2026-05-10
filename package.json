@@ -5,7 +5,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "dev": "unocss --watch public/**/*.html -o public/uno.css",
+    "dev": "unocss --watch",
+    "build": "unocss",
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

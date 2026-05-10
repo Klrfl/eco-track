@@ -26,6 +26,8 @@ Tuliskan perspektifmu: isu iklim spesifik apa yang ingin kamu angkat melalui des
 3. Jalankan `pnpm i` (jika ada backend)
 4. Jalankan dengan `pnpm start` atau buka public/index.html
 
+untuk menghasilkan file css yang final, jalankan `pnpm build`
+
 ## Tantangan yang Dihadapi
 
 Saya kesulitan dalam merancang API. Saya rasa akan lebih mudah jika diperbolehkan menggunakan templating sehingga frontend hanya berbentuk `<form>` tanpa menggunakan JavaScript untuk berkomunikasi dengan backend. Menurut saya juga lebih bagus karena request nanti diencode di URL sehingga dapat link dapat dibagikan ke orang lain dan hasil kalkulasinya langsung muncul tanpa harus diketik ulang di form.

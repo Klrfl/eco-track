@@ -4,6 +4,12 @@ import presetIcons from "@unocss/preset-icons";
 import { defineConfig } from "unocss";
 
 export default defineConfig({
+  cli: {
+    entry: {
+      patterns: ["public/**/*.html"],
+      outFile: "public/uno.css",
+    },
+  },
   presets: [
     presetWind4(),
     presetIcons(),
